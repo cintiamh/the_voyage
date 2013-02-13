@@ -10,7 +10,7 @@ set :scm_username, "cintiamh"
 
 set :rails_env, 'production'
 
-set :deploy_to, "/var/www"
+set :deploy_to, "/var/www/railsapp"
 
 role :web, "#{application}"                          # Your HTTP server, Apache/etc
 role :app, "#{application}"                          # This may be the same as your `Web` server
