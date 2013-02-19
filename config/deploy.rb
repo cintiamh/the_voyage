@@ -12,7 +12,7 @@ set :deploy_via, :remote_cache
 
 set :rails_env, 'production'
 
-set :deploy_to, "/var/www"
+set :deploy_to, "/var/www/deploy"
 
 role :web, "#{application}"                          # Your HTTP server, Apache/etc
 role :app, "#{application}"                          # This may be the same as your `Web` server
