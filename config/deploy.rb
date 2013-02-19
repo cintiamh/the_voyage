@@ -7,10 +7,12 @@ set :scm, :git # You can set :scm explicitly or Capistrano will make an intellig
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
 set :scm_username, "cintiamh"
+set :branch, "master"
+set :deploy_via, :remote_cache
 
 set :rails_env, 'production'
 
-set :deploy_to, "/var/www/railsapp"
+set :deploy_to, "/var/www"
 
 role :web, "#{application}"                          # Your HTTP server, Apache/etc
 role :app, "#{application}"                          # This may be the same as your `Web` server
